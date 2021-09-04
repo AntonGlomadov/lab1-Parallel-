@@ -46,7 +46,7 @@ int main() {
     {
         //присваеваем пременной rank номер потока
         rank = omp_get_thread_num();
-        if (rank%2==0)
+        if (rank%2==1)
             std::cout << rank<<std::endl;
     }
     return 0;
